@@ -39,7 +39,7 @@ def cal_euclidean_distance(coord1, coord2):
     y1 = coord1[1]
     x2 = coord2[0]
     y2 = coord2[1]
-    return ((y2 - y1) ** 2) + ((x2 - x1) ** 2) ** 0.5
+    return (((y2 - y1) ** 2) + ((x2 - x1) ** 2)) ** 0.5
 
 
 def cal_x_point_contact(linear_c, linear_m, c, m):
@@ -119,6 +119,7 @@ def list_of_list(df):
             list_content.append(sm.ratio())
         overall_list.append(list_content)
     return overall_list
+
 
 def similarity_hierarchy_transformation(df):
     autoscaler = StandardScaler()
